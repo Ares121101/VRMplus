@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "VRMplus",
+  "version": "1.2",
+  "description": "Enhanced Victron VRM Portal extension: Quick Highcharts zoom navigation, smoothed battery time-to-go, and live kWh capacity tracking.",
+  "permissions": ["activeTab", "storage"],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://vrm.victronenergy.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
